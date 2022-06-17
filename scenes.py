@@ -85,3 +85,25 @@ class RamanujanSummationScene(Scene):
             exclamation, DOWN).shift(0.6*DOWN)
         self.play(Write(end_line))
         self.wait(2)
+
+
+class SummationFlawScene(Scene):
+    """
+    Scene for explaining the flaw of ramanujan summation.
+    """
+
+    def construct(self):
+        reason = Tex(
+            r"\justifying {The only flaw in the ramanujan summation is that we can't treat a divergent series as a convergent one.}").scale(0.75).to_corner(UP + LEFT).set_color(RED)
+        self.play(Write(reason))
+        self.wait(3)
+
+        proof = Tex(r"\justifying {Real answer to the problem:\\$S_{n}=1+2+3+4+...+n$\\$S_{n}=\frac{n(n+1)}{2}$\\$\lim\limits_{n \to \infty} \frac{n(n+1)}{2} = \infty$}").scale(0.75).next_to(
+            reason, DOWN).shift(0.4 * DOWN).to_corner(LEFT).set_color(GREEN)
+        self.play(Write(proof))
+        self.wait(3)
+
+        conclusion = Tex(r"\justifying {As the number of terms in the sum increases, the sum tends to infinity}").scale(0.75).next_to(
+            proof, DOWN).shift(0.6 * DOWN).to_corner(LEFT)
+        self.play(Write(conclusion))
+        self.wait(3)
