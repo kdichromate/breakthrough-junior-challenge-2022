@@ -107,3 +107,34 @@ class SummationFlawScene(Scene):
             proof, DOWN).shift(0.6 * DOWN).to_corner(LEFT)
         self.play(Write(conclusion))
         self.wait(3)
+
+
+class SummationFactScene(Scene):
+    """
+    Scene for explaining the fact about ramanujan summation.
+    """
+
+    def construct(self):
+        ax = Axes(
+            x_range=[-1.8, 0.8, 1],
+            y_range=[-0.5, 0.72, 1],
+            tips=False,
+            axis_config={"include_numbers": True},
+        )
+
+        self.play(Create(ax))
+        self.wait(1)
+
+        graph = ax.plot(lambda x: x / 2 * (x + 1),
+                        x_range=[-1.8, 0.8], use_smoothing=True)
+        self.play(Create(graph))
+        self.wait(1)
+
+        area = ax.get_area(graph, x_range=(-1.0, 0), color=RED, opacity=0.5)
+        self.play(Create(area))
+        self.wait(3)
+
+        fact = Tex(r"\justifying {Area of red region = $-1/12$}").scale(
+            0.75).next_to(area, LEFT).shift(0.3 * RIGHT + 1.1 * DOWN)
+        self.play(Write(fact))
+        self.wait(4)
