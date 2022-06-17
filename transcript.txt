@@ -14,7 +14,7 @@ The proof goes as follows. We take a series "A" as follows. If we take the negat
 We take another series "B" as follows. On subtracting it from "A" and adding the adjacent terms, we can see that the sum comes to be the same as "B". By again performing some simple algebra, we come to the sum as 1/4.
 
 [Scene 3: Ramanujan Summation (Proof: Part C)]
-Now to the final part of the proof of summation. We will look back to the problem series now. We call it "S". On subtracting it from "B" and adding the adjacent terms, we can see that the sum comes to be the same as negative 4A. And at the end we get the value of S as -1/12.
+Now to the final part of the proof of summation. We will look back to the problem series now. We call it "S". On subtracting it from "B" and adding the adjacent terms, we can see that the sum comes to be the same as negative 4S. And at the end we get the value of S as -1/12.
 
 [Scene 3: Ramanujan Summation (Exclamation)]
 What!? Isn't it weird that the sum of all the numbers is equal to a negative number. Well, this proof by Sir Ramanujan isn't right. Let's see how!
