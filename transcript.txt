@@ -1,0 +1,29 @@
+[Scene 1: Intro]
+Hello, this video is my submission for Breakthrough Challenge 2022. I hope that you like it.
+
+[Scene 2: Problem Statement]
+Today I am going to answer a very interesting question. The question being the sum of all the natural numbers. Natural numbers are the numbers starting from 1, 2, 3, and going on to infinity.
+
+[Scene 3: Ramanujan Summation (Intro)]
+A great Indian mathematician Sir Srinivasa Ramanujan calculated the sum of all the natural numbers in a very interesting way. We address the method as Ramanujan Summation.
+
+[Scene 3: Ramanujan Summation (Proof: Part A)]
+The proof goes as follows. We take a series "A" as follows. If we take the negative sign common starting from the second term of the series, we can see that it becomes similar to our original series "A". We replace it with "A" and perform simple algebra to come to the answer as 1/2.
+
+[Scene 3: Ramanujan Summation (Proof: Part B)]
+We take another series "B" as follows. On subtracting it from "A" and adding the adjacent terms, we can see that the sum comes to be the same as "B". By again performing some simple algebra, we come to the sum as 1/4.
+
+[Scene 3: Ramanujan Summation (Proof: Part C)]
+Now to the final part of the proof of summation. We will look back to the problem series now. We call it "S". On subtracting it from "B" and adding the adjacent terms, we can see that the sum comes to be the same as negative 4A. And at the end we get the value of S as -1/12.
+
+[Scene 3: Ramanujan Summation (Exclamation)]
+What!? Isn't it weird that the sum of all the numbers is equal to a negative number. Well, this proof by Sir Ramanujan isn't right. Let's see how!
+
+[Scene 4: Summation Flaw]
+The only flaw in the ramanujan summation is that we can't treat a divergent series as a convergent one. This means that the series "S" doesn't has a certain numerical value. And also we can't perform arithmetic operations on the quantities which don't have a definite numerical value. So calculating the sum by the way of ramanujan summation doesn't makes sense. The real proof goes as follows. We know that the sum of all the natural numbers upto "N" is as follows. On calculating the limit of this function, we find it equal to infinity. This shows that the series is diverging and doesn't has a certain numerical value.
+
+[Scene 5: Summation Fact]
+When we plot the sum of natural numbers till "N". We can see that the area of the graph below the x-axis is equal to -1/12. If you are interested, this area is called the definite integral of a function.
+
+[Scene 6: Outro]
+Thank you all for watching this video. And also don't forget that the sum of all natural numbers isn't -1/12.
