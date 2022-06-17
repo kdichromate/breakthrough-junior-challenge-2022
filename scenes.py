@@ -138,3 +138,14 @@ class SummationFactScene(Scene):
             0.75).next_to(area, LEFT).shift(0.3 * RIGHT + 1.1 * DOWN)
         self.play(Write(fact))
         self.wait(4)
+
+
+class OutroScene(Scene):
+    """
+    Scene for the outro of the video.
+    """
+
+    def construct(self):
+        self.play(Write(Tex(
+            r"Thank You!\\And don't forget that sum of all the natural numbers isn't -1/12 ;)").scale(0.9)))
+        self.wait(3)
