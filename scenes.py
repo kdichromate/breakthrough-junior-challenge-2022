@@ -64,7 +64,7 @@ class RamanujanSummationScene(Scene):
 
         self.clear()
 
-        proof_c = Tex(r"\justifying {$S=1+2+3+4+...$\\$B-S=(1-2+3-4+...)-(1+2+3+4+...)$\\$B-S=(1-1)+(-2+2)+(3-3)+(-4+4)+(5-5)+(-6-6)+...$\\$B-S=-4(1+2+3+...)$\\$B-S=-4S$\\$S=-1/12$}").scale(
+        proof_c = Tex(r"\justifying {$S=1+2+3+4+...$\\$B-S=(1-2+3-4+...)-(1+2+3+4+...)$\\$B-S=(1-1)+(-2-2)+(3-3)+(-4-4) +...+(5-5)+(-6-6)+...$\\$B-S=-4(1+2+3+...)$\\$B-S=-4S$\\$S=-1/12$}").scale(
             0.75).to_corner(UP + LEFT)
         self.play(Write(proof_c))
         self.wait(6)
